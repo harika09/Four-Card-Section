@@ -40,13 +40,15 @@ body{
 
 .top__title h2{
     font-family: var(--Poppins);
+    color: var(--very-dark-blue);
     font-weight: 200;
     font-size: 2rem;
 }
 
 .top__title h2 span{
+    color: var(--very-dark-blue);
     font-family: var(--Poppins);
-    font-weight: 400;
+    font-weight: 600;
     font-size: 2.3rem;
 }
 
@@ -54,7 +56,7 @@ body{
     /* height: 100vh; */
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4 1fr);
     justify-content: center;
     align-items: center;
 }
@@ -100,8 +102,8 @@ p{
 .card2{
     border-top-style: solid;
     border-top-color: var(--red);
-    grid-column-start: 2;
     grid-row: 2 / 4;
+    grid-column-start: 2;
     background-color: #fff;
     width: 280px;
     padding: 20px 20px;
@@ -120,8 +122,8 @@ p{
 .card3{
     border-top-style: solid;
     border-top-color: var(--orange);
-    grid-column-start: 2;
     grid-row: 4 / 6;
+    grid-column-start: 2;
     background-color: #fff;
     width: 280px;
     padding: 20px 20px;
@@ -155,17 +157,17 @@ p{
 }
 /* ---- Calculator END ---- */
 
+
 .challenge{
     text-align: center;
 }
-
 
 @media screen and (max-width: 1000px){
 
     .card__container{
         /* height: 100vh; */
         padding-left: 20px;
-        grid-gap: 10px;
+        grid-gap: 20px;
         justify-content: center;
         align-items: center;
     }
@@ -203,10 +205,11 @@ p{
 
     .top__title p{
         padding: 10px 20px;
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 2;
+        
     }
-    
+
     .challenge{
         text-align: center;
         font-size: 10px;
