@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+:root{
+    /* Primary Colors */
+    --red:hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+}
+:root{
+    /* Neutral*/
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+:root{
+    /* Font */
+    --Poppins: 'Poppins', sans-serif;
+    --mb-15: 15px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--very-light-gray);
+}
+
+
+
+.main__container{
+    padding: 20px 0;
+}
+
+.top__title{
+    text-align: center;
+}
+
+.top__title h2{
+    font-family: var(--Poppins);
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.top__title h2 span{
+    font-family: var(--Poppins);
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+
+.card__container{
+    /* height: 100vh; */
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+ h3{
+    font-family: var(--Poppins);
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+p{
+    font-family: var(--Poppins);
+    font-weight: 200;
+    font-size: var(--mb-15);
+    line-height: 2;
+    color: var(--very-dark-blue);
+}
+
+/* ---- Supervisor Start ---- */
+.card1{
+    border-top-style: solid;
+    border-top-color: var(--cyan);
+    grid-row: 2 / span 4;
+    grid-column-start: 1;
+    background-color: #fff;
+    width: 280px;
+    padding: 20px 20px;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* background: url(/assets/img/icon-supervisor.svg) no-repeat bottom right; */
+}
+
+.supervisor{
+    height: 200px;
+    background: url(/assets/img/icon-supervisor.svg) no-repeat bottom right;
+}
+
+
+/* ---- Supervisor END ---- */
+
+
+/* ---- Team Builder Start ---- */
+.card2{
+    border-top-style: solid;
+    border-top-color: var(--red);
+    grid-column-start: 2;
+    grid-row: 2 / 4;
+    background-color: #fff;
+    width: 280px;
+    padding: 20px 20px;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.teambuilder{
+    height: 200px;
+    background: url(/assets/img/icon-team-builder.svg) no-repeat bottom right;
+}
+/* ---- Team Builder END ---- */
+
+
+/* ---- Karma Start ---- */
+.card3{
+    border-top-style: solid;
+    border-top-color: var(--orange);
+    grid-column-start: 2;
+    grid-row: 4 / 6;
+    background-color: #fff;
+    width: 280px;
+    padding: 20px 20px;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.karma{
+    height: 200px;
+    background: url(/assets/img/icon-karma.svg) no-repeat bottom right;
+}
+/* ---- Karma END ---- */
+
+
+/* ---- Calculator Start ---- */
+.card4{
+    border-top-style: solid;
+    border-top-color: var(--blue);
+    grid-row: 2 / span 4;
+    grid-column-start: 3;
+    background-color: #fff;
+    width: 280px;
+    padding: 20px 20px;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.calculator{
+    height: 200px;
+    background: url(/assets/img/icon-calculator.svg) no-repeat bottom right;
+}
+/* ---- Calculator END ---- */
+
+
+@media screen and (max-width: 1000px){
+
+    .card__container{
+        /* height: 100vh; */
+        padding-left: 20px;
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card1{
+        grid-row: 1/1;
+        grid-column-start: 1;
+        
+    }
+    .card2{
+        grid-row: 2;
+        grid-column-start: 1;
+    }
+    .card3{
+        grid-row: 3;
+        grid-column-start: 1;
+    }
+    .card4{
+        grid-row: 5;
+        grid-column-start: 1;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .top__title{
+        padding: 50px 0;
+    }
+    .top__title h2{
+        font-size: 1.5rem;
+    }
+
+    .top__title h2 span{
+        font-size: 1.6rem;
+    }
+
+    .top__title p{
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        line-height: 2;
+        
+    }
+}
