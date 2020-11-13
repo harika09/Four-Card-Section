@@ -155,7 +155,9 @@ p{
 }
 /* ---- Calculator END ---- */
 
-
+.challenge{
+    text-align: center;
+}
 @media screen and (max-width: 1000px){
 
     .card__container{
@@ -201,6 +203,10 @@ p{
         padding: 10px 20px;
         font-size: 1.2rem;
         line-height: 2;
-        
+    }
+    
+    .challenge{
+        text-align: center;
+        font-size: 10px;
     }
 }
